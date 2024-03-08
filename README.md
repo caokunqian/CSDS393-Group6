@@ -6,10 +6,3 @@
 ## Features
 - **Personal Profiles**: Create and customize your user profile.
 - **Connect with Peers**: Find and connect with people sharing similar interests.
-
-## Installation
-```bash
-git clone <repository-link>
-cd <repository-name>
-npm install
-npm start
