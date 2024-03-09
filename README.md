@@ -5,4 +5,6 @@
 
 ## Features
 - **Personal Profiles**: Create and customize your user profile.
-- **Connect with Peers**: Find and connect with people sharing similar interests.
+* **Activity Logs**: A unique medium for users to post and engage with content, utilizing keywords for better discoverability.
+- **Explore Page**: Features a matching algorithm to connect users with similar interests and easily find and connect with people sharing similar interests.
+- **FlashForum**: Users can create or join temporary forums and polls on diverse topics, promoting spontaneous community engagement.
