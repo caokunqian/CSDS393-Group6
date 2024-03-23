@@ -1,10 +1,29 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'bootstrap4/bootstrap.min.css' %}">
 </head>
 <body>
-    <h1>Welcome to Group6!</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MyApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="{% url 'myapp:login' %}">Sign In</a>
+                <a class="nav-item nav-link" href="{% url 'myapp:register' %}">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Welcome to MyApp</h1>
+
+    <script src="{% static 'bootstrap4/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'bootstrap4/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>

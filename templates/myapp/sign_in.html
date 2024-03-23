@@ -1,0 +1,43 @@
+
+{% load static %}
+{% load bootstrap4 %}
+{% block title %}
+    Register
+{% endblock %}
+
+{% block css %}
+    <style>
+        .border-left-radius-self {
+            border-top-left-radius: 2.5rem;
+            border-bottom-left-radius: 2.5rem;
+        }
+        .border-right-radius-self{
+            border-top-right-radius: 2.5rem;
+            border-bottom-right-radius: 2.5rem;
+        }
+        label{
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    </style>
+
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 border rounded shadow pb-1">
+                <h3 class="text-center text-primary">Register</h3>
+                <form action="{% url 'myapp:register' %}" method="post">
+                    {% csrf_token %}
+                    {% bootstrap_form register_form %}
+                    <button class="btn btn-outline-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}
