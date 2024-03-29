@@ -16,7 +16,7 @@ jobs:
         username: ${{ secrets.SERVER_USER }}
         password: ${{ secrets.SERVER_PASSWORD }}
         script: |
-          cd /path/to/backend
+          cd /backend
           git pull
           pip install -r requirements.txt
           python manage.py migrate
@@ -34,7 +34,7 @@ jobs:
         username: ${{ secrets.SERVER_USER }}
         password: ${{ secrets.SERVER_PASSWORD }}
         script: |
-          cd /path/to/frontend
+          cd /frontend
           git pull
           npm install
           npm run build
